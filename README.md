@@ -1,6 +1,4 @@
-Yes, if you have an existing HTML code for your EHR app called MedVault, you can integrate it with the backend and data visualization requirements described earlier. Here's how you can adapt and integrate your MedVault HTML code into the project.
-
-### Step-by-Step Integration Guide
+Medvault
 
 1. **Project Structure**:
     Ensure your project structure looks like this:
