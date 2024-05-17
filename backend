@@ -1,0 +1,7 @@
+backend/
+├── models/
+│   └── Patient.js
+├── routes/
+│   └── patientRoutes.js
+├── app.js
+└── config.js
