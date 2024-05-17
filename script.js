@@ -1,4 +1,4 @@
-// Fetch data from the backend and visualize using D3.js
+
 async function fetchData() {
   const response = await fetch('http://localhost:3000/api/patients');
   const data = await response.json();
