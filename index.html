@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawcare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Salsa&display=swap">
+
+    <style>
+        body {
+            background: linear-gradient(45deg,#F8FAE5, #010f28, #f4026f, #779af8);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            color: #000000;
+            font-family: 'Salsa', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #050505;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #fcf9f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e95703; 
+            padding: 10px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 5px;
+        }
+
+        nav a {
+            color: #030303; 
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #282622;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        
+        .fadeIn {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .whyChooseMedVault {
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+         .body { 
+            animation: gradientAnimation 15s ease infinite;
+        }
+         @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .cta-container {
+            background-color: #000000;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        .cta-container p {
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #040404;
+            background-color: #FFE8E8;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #666;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            background-color: #703f37;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #ffffff;
+        }
+
+        .flashcards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .flashcard {
+            background-color: #FFE8E8;
+            border: 1px solid #FFE8E8;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .flashcard h3 {
+            color: #000000;
+        }
+
+        .flashcard p {
+            color: #000000;
+        }
+
+        .imageSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 40px;
+            margin: 20px 0;
+        }
+
+        .imageSection img {
+            max-width: 30%;
+            height: 30%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .textSection {
+            max-width: 60%;
+            text-align: left;
+            color: #decfcf;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-family: 'Salsa', sans-serif;
+        }
+
+        .textSection p {
+            color: #ded5d5;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+<script src="scriptcookie.js"></script>
+
+<body class="fadeIn">
+
+    <header>
+        <h1>MedVault</h1>
+        <nav>
+            <a href="login.html" target="_blank">Login</a>
+            <a href="register.html" target="_blank">Register</a>
+        </nav>
+    </header>
+
+    <section class="whyChoosePawcare" id="home">
+        <div class="imageSection">
+            <img src="bg.jpg" alt="PawcarePurpose Graphic">
+            <div class="textSection">
+                <h3>Pawcare</h3>
+                <p>You can create, edit and manage patient information in Medvault. All the data is safe and secure with end to end encryption. Our aim is to make the Health data storage and maintenance safe and friction-free.</p>
+            </div>
+        </div>
+        
+        <section id="about">
+            <div class="cta-container">
+            <h2>Key Features of MedVault</h2>
+            <div class="flashcards">
+                <div class="flashcard">
+                    <h3>Secure Health Record Management</h3>
+                    <p>MedVault prioritizes the privacy and security of health data. Utilizes state-of-the-art encryption and authentication measures to ensure confidentiality.</p>
+                </div>
+
+                <div class="flashcard">
+                    <h3>User-Friendly Interface</h3>
+                    <p>Designed for ease of use, catering to both patients and healthcare professionals. Streamlines the process of accessing and updating health records.</p>
+                </div>
+
+                <div class="flashcard">
+                    <h3>Mission and Values</h3>
+                    <p>MedVault is driven by a mission to provide a trustworthy platform for health record management. Focuses on delivering a secure and efficient solution for individuals and healthcare entities.</p>
+                </div>
+
+                <div class="flashcard">
+                    <h3>Patient-Centric Approach</h3>
+                    <p>Tailored to meet the needs of patients, offering tools to manage their health information conveniently. Enhances patient engagement in their healthcare journey.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta-container">
+            <p>Ready to experience the future of healthcare management?</p>
+            <a href="register.html" class="cta-button">Get Started with MedVault</a>
+        </div>
+
+    </section>
+
+    <footer id="aboutus">
+        &copy; 2023 MedVault. All rights reserved.
+    </footer>
+
+    <button class="scroll-to-top" onclick="scrollToTop()">Scroll to Top</button>
+
+</body>
+
+</html>
