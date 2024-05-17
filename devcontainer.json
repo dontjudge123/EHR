@@ -1,0 +1,5 @@
+{
+  "name": "Health Data Visualization - Medvault",
+  "dockerFile": "Dockerfile",
+  "appPort": [3000, 3001]
+}
