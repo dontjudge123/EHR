@@ -1,0 +1,16 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const config = require('./config');
+const patientRoutes = require('./routes/patientRoutes');
+
+const app = express();
+
+app.use(express.json());
+
+mongoose.connect(config.mongoURI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+app.use('/api', patientRoutes);
+
+app.listen(config.port, () => {
+  console.log(`Server running on port ${config.port}`);
+});
